@@ -100,7 +100,7 @@ export default function Card(props) {
 
 
       try {
-        const response = await fetch("https://quickdine-backend.onrender.com/api/addcart", {
+        const response = await fetch("https://quickdine-backend-2.onrender.com/api/addcart", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
