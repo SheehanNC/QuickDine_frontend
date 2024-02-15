@@ -15,7 +15,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://quickdine-backend.onrender.com/api/loginuser", {
+    const response = await fetch("https://quickdine-backend-2.onrender.com/api/loginuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
