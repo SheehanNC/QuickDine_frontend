@@ -68,7 +68,7 @@ const handleCheckOut = async () => {
 
     try {
         const response = await Promise.all(cartItems.map(async (item) => {
-            await fetch("https://quickdine-backend.onrender.com/api/orderData", {
+            await fetch("https://quickdine-backend-2.onrender.com/api/orderData", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -82,7 +82,7 @@ const handleCheckOut = async () => {
         }));
             console.log("Order Successful!");
         
-        await axios.delete(`https://quickdine-backend.onrender.com/api/deleteAllItems?userEmail=${userEmail}`);
+        await axios.delete(`https://quickdine-backend-2.onrender.com/api/deleteAllItems?userEmail=${userEmail}`);
         // After successful order and clearing the cart, fetch updated cart data
         fetchCartData();
     } catch (error) {
