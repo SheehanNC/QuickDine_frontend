@@ -17,7 +17,7 @@ export default function Cart() {
 
     const fetchCartData = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/cartItems?userEmail=${userEmail}`);
+            const response = await axios.get(`https://quickdine-backend-2.onrender.com/api/cartItems?userEmail=${userEmail}`);
             setCartItems(response.data); // Assuming backend returns an array of cart items
             setLoading(false);
         } catch (error) {
