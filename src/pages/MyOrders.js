@@ -24,7 +24,7 @@ export default function MyOrders() {
     const fetchOrderData = async () => {
       try {
         const response = await axios.post(
-          "https://quickdine-backend.onrender.com/api/myOrderData",
+          "https://quickdine-backend-2.onrender.com/api/myOrderData",
           {
             email: userEmail,
           }
