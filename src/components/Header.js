@@ -17,7 +17,7 @@ export default function Header() {
   useEffect(() => {
     const fetchCartItemCount = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/cartItemCount?userEmail=${user.email}`);
+        const response = await axios.get(`https://quickdine-backend-2.onrender.com/api/cartItemCount?userEmail=${user.email}`);
         setCartItemCount(response.data.count);
       } catch (error) {
         console.error('Error fetching cart item count:', error);
