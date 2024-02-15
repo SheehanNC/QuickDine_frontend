@@ -27,7 +27,7 @@ export default function Cart() {
 
     const handleRemove = async (name) => {
         try {
-            await axios.delete(`http://localhost:5000/api/deleteItems/${name}`);
+            await axios.delete(`https://quickdine-backend-2.onrender.com/api/deleteItems/${name}`);
             // After successful deletion, fetch updated cart data
             fetchCartData();
         } catch (error) {
